@@ -16,9 +16,14 @@ def all_odd(numbers):
         >>> all_odd([2, -6, 8])
         []
     """
-
-    return ['the wrong thing']
-
+numbers = []
+for i in numbers:
+    if i % 2 == 0: #in order to find odd numbers, they cannot be dividisble by 2.
+        pass
+    else:
+        print i 
+return []
+#Still feeling a little confused about return statement. When I try to execute the code, I get SyntaxError: return is outside function message, but 
 
 def print_indices(items):
     """Print index of each item in list, followed by item itself.
@@ -38,8 +43,10 @@ def print_indices(items):
         1 Jeep
         2 Volvo
     """
-
-    print "Nothing at all"
+items = []
+for i in range(len(items)):
+#know the length of the parameter, and then using range to list each variable, so each variable can then be indexed 
+    print "{} {}".format(i, items[i])
 
 
 def foods_in_common(foods1, foods2):
@@ -69,8 +76,16 @@ def foods_in_common(foods1, foods2):
         []
 
     """
-
-    return ['the wrong thing']
+food1 = ["lamb", "chili", "cheese"]
+food1.sort() #sort list alphabetically
+food2 = ["cake", "ice cream", "cheese", "lamb"]
+food2.sort() #sort list alphabetically
+common1 = set[food1] #create a new variable and set it to equal to food1 and food2 lists as sets
+common2 = set[food2]
+for i in common1 & common2: #looking for intersection of two sets
+    print i
+  
+    #return ['the wrong thing']
 
 
 def every_other_item(items):
@@ -86,8 +101,9 @@ def every_other_item(items):
        ... )
        ['you', 'are', 'good', 'at', 'code']
     """
-
-    return ['the wrong thing']
+items = [] #set parameter items to equal to a list
+print items[::2] #print every other item in the list, from start to finish
+    #return ['the wrong thing']
 
 
 def largest_n_items(items, n):
@@ -111,18 +127,19 @@ def largest_n_items(items, n):
         >>> largest_n_items([3, 3, 3, 2, 1], 2)
         [3, 3]
     """
+items = []
+items.sort() #sort items alphanumerically
+for i in items:
+    # not sure at all how to set up the function to only pull nth largest numbers
 
-    return []
+# #####################################################################
+# # END OF ASSESSMENT: You can ignore everything below.
 
+# if __name__ == "__main__":
+#     import doctest
 
-#####################################################################
-# END OF ASSESSMENT: You can ignore everything below.
-
-if __name__ == "__main__":
-    import doctest
-
-    print
-    result = doctest.testmod()
-    if not result.failed:
-        print "ALL TESTS PASSED. GOOD WORK!"
-    print
+#     print
+#     result = doctest.testmod()
+#     if not result.failed:
+#         print "ALL TESTS PASSED. GOOD WORK!"
+#     print
