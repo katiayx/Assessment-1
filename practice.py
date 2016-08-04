@@ -230,7 +230,10 @@ def join_strings(words):
         ''
     """
 
-    return "Not the right thing"
+    for i in range(len(words)):
+        print word[i]
+
+    return 
 
 
 def average(numbers):
@@ -252,7 +255,9 @@ def average(numbers):
     (Think of the best way to handle an empty input list, though,
     a feel free to provide a good solution here.)
     """
-
+    #sum of numbers
+    
+    #dividual number of numbers
     return 0
 
 
